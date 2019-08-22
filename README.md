@@ -57,13 +57,41 @@
  
  ![](https://raw.githubusercontent.com/10DECODERS/Cache-Springboot-EMR-Document/master/4.jpg)
  
- ### Create Table
+ ## Create Table
+ 
+   ### Add value: To adding the value to the table using POSTMAN.we have to select the POST method and build the raw data for adding.
  
   ![](https://raw.githubusercontent.com/10DECODERS/Cache-Springboot-EMR-Document/master/5.jpg)
   
   ![](https://raw.githubusercontent.com/10DECODERS/Cache-Springboot-EMR-Document/master/6.jpg)
   
-  ### Add value
+ ### Update value - To update the value to the table using POSTMAN.we have to select the PUT method and build the raw data for updating.
+ 
+  ![](https://raw.githubusercontent.com/10DECODERS/Cache-Springboot-EMR-Document/master/7.jpg)
+  
+  ![](https://raw.githubusercontent.com/10DECODERS/Cache-Springboot-EMR-Document/master/8.jpg)
+  
+### Delete value - To delete the value from the table using POSTMAN.we have to select the DELETE method.
+  
+  ![](https://raw.githubusercontent.com/10DECODERS/Cache-Springboot-EMR-Document/master/9.jpg)
+  
+  ![](https://raw.githubusercontent.com/10DECODERS/Cache-Springboot-EMR-Document/master/10.jpg)
+  
+## What is SWAGGER?
+      Swagger allows you to describe the structure of your APIs so that machines can read them. The ability of APIs to describe their own structure is the root of all awesomeness in Swagger. Why is it so great? Well, by reading your API’s structure, we can automatically build beautiful and interactive API documentation. We can also automatically generate client libraries for your API in many languages and explore other possibilities like automated testing. Swagger does this by asking your API to return a YAML or JSON that contains a detailed description of your entire API. 
+
+## How to create the documentation using SWAGGER?
+	* Create new class file SwaggerConfig in main application package.
+	* Add the connection of swagger in build.gradle.
+  
+  ![](https://raw.githubusercontent.com/10DECODERS/Cache-Springboot-EMR-Document/master/11.jpg)
+  ![](https://raw.githubusercontent.com/10DECODERS/Cache-Springboot-EMR-Document/master/12.jpg)
+  
+  Then put the url in any browser like this 
+    http://localhost:8080/spring-security-rest/api/v2/api-docs
+    http://localhost:8080/your-app-root/swagger-ui.html
+
+  ![](https://raw.githubusercontent.com/10DECODERS/Cache-Springboot-EMR-Document/master/13.jpg)
 
 
 
