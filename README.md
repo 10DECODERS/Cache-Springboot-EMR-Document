@@ -57,20 +57,20 @@
  
  ![](https://raw.githubusercontent.com/10DECODERS/Cache-Springboot-EMR-Document/master/4.jpg)
  
- ## Create Table
+## Create Table
  
-   ### Add value: To adding the value to the table using POSTMAN.we have to select the POST method and build the raw data for adding.
+### Add value: To adding the value to the table using POSTMAN.we have to select the POST method and build the raw data for adding.
  
   ![](https://raw.githubusercontent.com/10DECODERS/Cache-Springboot-EMR-Document/master/5.jpg)
   
   ![](https://raw.githubusercontent.com/10DECODERS/Cache-Springboot-EMR-Document/master/6.jpg)
   
- ### Update value - To update the value to the table using POSTMAN.we have to select the PUT method and build the raw data for updating.
+### Update value - To update the value to the table using POSTMAN.we have to select the PUT method and build the raw data for updating.
  
   ![](https://raw.githubusercontent.com/10DECODERS/Cache-Springboot-EMR-Document/master/7.jpg)
   
   ![](https://raw.githubusercontent.com/10DECODERS/Cache-Springboot-EMR-Document/master/8.jpg)
-  
+
 ### Delete value - To delete the value from the table using POSTMAN.we have to select the DELETE method.
   
   ![](https://raw.githubusercontent.com/10DECODERS/Cache-Springboot-EMR-Document/master/9.jpg)
