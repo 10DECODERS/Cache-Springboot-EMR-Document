@@ -24,31 +24,47 @@
   Gradle is a build automation system that is fully open source and uses the concepts you see on Apache Maven and Apache Ant. It uses domain-specific language based on the programming language Groovy, differentiating it from Apache Maven, which uses XML for its project configuration. It also determines the order of tasks run by using a directed acyclic graph.
 
 ## How can we connect the Spring boot with Cache database?
-  ->  java spring project using either maven or gradle.
-  ->  Set the connection of JDBC Driver,Url,Username,Password in gradle’s application properties.
+   *  java spring project using either maven or gradle.
+   *  Set the connection of JDBC Driver,Url,Username,Password in gradle’s application properties.
   
-![](https://raw.githubusercontent.com/10DECODERS/Cache-Springboot-EMR-Document/master/1.jpeg)
+![](https://raw.githubusercontent.com/10DECODERS/Cache-Springboot-EMR-Document/master/1.jpg)
 
-# Getting Started
+  * Adding the JAR files to the local repository for accessing the Cache database.
+  * Implement the JAR files in build.gradle.
+  * Create a new package and class for dialect.
+  
+  ![](https://raw.githubusercontent.com/10DECODERS/Cache-Springboot-EMR-Document/master/2.jpg)
+  
+ ## What are the cache JAR files are needed?
+  We need the cache-jdbc-2.0.0.jar to connect the cache database.This jar file can be located in <install-dir>\Dev\java\lib\<java-release>.Then we have to add the JAR file into local repository of  Maven.
+	<install-dir> -  Which is the location of cache studio application’s program files in any of system directories like as C:\Program Files\etc.
+	<java_release> - Which is the files of Java versions like as JDK17 & JDK18
 
-### Reference Documentation
-For further reference, please consider the following sections:
+## How to add the JAR files in Maven local repository?
+  Using the following command for adding the external JAR files to Maven repository.
+ mvn install:install-file -Dfile=<path-to-file> -DgroupId=<group-id> -DartifactId=<artifact-id> -Dversion=<version> -Dpackaging=<packaging>
+	After that we have to implement the JAR files in build.gradle file.
+	<path-to-file> - Which is the location of the JAR file like C:\InterSystems\TryCache\dev\java\lib\JDK18\cache-jdbc-2.0.0.jar 
+	<group-id> - Which is group name for JAR file depends upon user’s wish.it like as com.intersystems
+	<artifact-id> - Name of the JAR file (cache-jdbc)
+	<version> - Version of the JAR file(2.0.0)
+	<packaging>  - File type (jar)
+   
+## Output:
+  Create the table - We have to start the application at first still the table is created in the cache database.The table name must be the class name.Using the SQL query (SELECT * FROM SQLUser.table_name) to view the table in the Cache database.
 
-* [Official Caché JDBC](https://cedocs.intersystems.com/latest/csp/docbook/DocBook.UI.Page.cls?KEY=BGJD_connecting)
-* [Official Gradle documentation](https://docs.gradle.org)
-* [Spring Data JPA](https://docs.spring.io/spring-boot/docs/{bootVersion}/reference/htmlsingle/#boot-features-jpa-and-spring-data)
-* [Spring Web Starter](https://docs.spring.io/spring-boot/docs/{bootVersion}/reference/htmlsingle/#boot-features-developing-web-applications)
+ ![](https://raw.githubusercontent.com/10DECODERS/Cache-Springboot-EMR-Document/master/3.jpg)
+ 
+ ![](https://raw.githubusercontent.com/10DECODERS/Cache-Springboot-EMR-Document/master/4.jpg)
+ 
+ ### Create Table
+ 
+  ![](https://raw.githubusercontent.com/10DECODERS/Cache-Springboot-EMR-Document/master/5.jpg)
+  
+  ![](https://raw.githubusercontent.com/10DECODERS/Cache-Springboot-EMR-Document/master/6.jpg)
+  
+  ### Add value
 
-### Guides
-The following guides illustrate how to use some features concretely:
 
-* [Accessing Data with JPA](https://spring.io/guides/gs/accessing-data-jpa/)
-* [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
-* [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
-* [Building REST services with Spring](https://spring.io/guides/tutorials/bookmarks/)
 
-### Additional Links
-These additional references should also help you:
-
-* [Gradle Build Scans – insights for your project's build](https://scans.gradle.com#gradle)
 
