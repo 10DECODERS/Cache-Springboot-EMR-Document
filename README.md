@@ -27,7 +27,7 @@
    *  java spring project using either maven or gradle.
    *  Set the connection of JDBC Driver,Url,Username,Password in gradle’s application properties.
   
-![Demo Animation](../assets/1.jpg?raw=true)
+![](https://raw.githubusercontent.com/10DECODERS/Cache-Springboot-EMR-Document/assets/1.jpeg?raw=true)
 
   * Adding the JAR files to the local repository for accessing the Cache database.
   * Implement the JAR files in build.gradle.
