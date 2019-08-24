@@ -1,7 +1,5 @@
 # JAVA SPRING BOOT WITH CACHE DATABASE
 
-![Demo Animation](../assets/1.jpg?raw=true)
-
 ## What is Intersystem caché database?
   InterSystems Cache is a commercial operational database management system from InterSystems, used to develop software applications for healthcare management, banking and financial services, government, and other sectors. Customer software can use the database with object and SQL code. Caché also allows developers to directly manipulate its underlying data structures: hierarchical arrays known as M technology.
   
@@ -29,13 +27,13 @@
    *  java spring project using either maven or gradle.
    *  Set the connection of JDBC Driver,Url,Username,Password in gradle’s application properties.
   
-![](https://raw.githubusercontent.com/10DECODERS/Cache-Springboot-EMR-Document/master/1.jpg)
+![Demo Animation](../assets/1.jpg?raw=true)
 
   * Adding the JAR files to the local repository for accessing the Cache database.
   * Implement the JAR files in build.gradle.
   * Create a new package and class for dialect.
   
-  ![](https://raw.githubusercontent.com/10DECODERS/Cache-Springboot-EMR-Document/master/2.jpg)
+  ![Demo Animation](../assets/2.jpg?raw=true)
   
  ## What are the cache JAR files are needed?
   We need the cache-jdbc-2.0.0.jar to connect the cache database.This jar file can be located in <install-dir>\Dev\java\lib\<java-release>.Then we have to add the JAR file into local repository of  Maven.
@@ -55,29 +53,25 @@
 ## Output:
   Create the table - We have to start the application at first still the table is created in the cache database.The table name must be the class name.Using the SQL query (SELECT * FROM SQLUser.table_name) to view the table in the Cache database.
 
- ![](https://raw.githubusercontent.com/10DECODERS/Cache-Springboot-EMR-Document/master/3.jpg)
- 
- ![](https://raw.githubusercontent.com/10DECODERS/Cache-Springboot-EMR-Document/master/4.jpg)
+ ![Demo Animation](../assets/3.jpg?raw=true)
+ ![Demo Animation](../assets/4.jpg?raw=true)
  
 ## Create Table
  
 ### Add value: To adding the value to the table using POSTMAN.we have to select the POST method and build the raw data for adding.
  
-  ![](https://raw.githubusercontent.com/10DECODERS/Cache-Springboot-EMR-Document/master/5.jpg)
-  
-  ![](https://raw.githubusercontent.com/10DECODERS/Cache-Springboot-EMR-Document/master/6.jpg)
+![Demo Animation](../assets/5.jpg?raw=true)
+![Demo Animation](../assets/6.jpg?raw=true)
   
 ### Update value - To update the value to the table using POSTMAN.we have to select the PUT method and build the raw data for updating.
  
-  ![](https://raw.githubusercontent.com/10DECODERS/Cache-Springboot-EMR-Document/master/7.jpg)
-  
-  ![](https://raw.githubusercontent.com/10DECODERS/Cache-Springboot-EMR-Document/master/8.jpg)
+ ![Demo Animation](../assets/7.jpg?raw=true)
+ ![Demo Animation](../assets/8.jpg?raw=true)
 
 ### Delete value - To delete the value from the table using POSTMAN.we have to select the DELETE method.
   
-  ![](https://raw.githubusercontent.com/10DECODERS/Cache-Springboot-EMR-Document/master/9.jpg)
-  
-  ![](https://raw.githubusercontent.com/10DECODERS/Cache-Springboot-EMR-Document/master/10.jpg)
+ ![Demo Animation](../assets/9.jpg?raw=true)
+ ![Demo Animation](../assets/10.jpg?raw=true)
   
 ## What is SWAGGER?
    Swagger allows you to describe the structure of your APIs so that machines can read them. The ability of APIs to describe their own structure is the root of all awesomeness in Swagger. Why is it so great? Well, by reading your API’s structure, we can automatically build beautiful and interactive API documentation. We can also automatically generate client libraries for your API in many languages and explore other possibilities like automated testing. Swagger does this by asking your API to return a YAML or JSON that contains a detailed description of your entire API. 
@@ -86,14 +80,14 @@
 	* Create new class file SwaggerConfig in main application package.
 	* Add the connection of swagger in build.gradle.
   
-  ![](https://raw.githubusercontent.com/10DECODERS/Cache-Springboot-EMR-Document/master/11.jpg)
-  ![](https://raw.githubusercontent.com/10DECODERS/Cache-Springboot-EMR-Document/master/12.jpg)
+ ![Demo Animation](../assets/11.jpg?raw=true)
+ ![Demo Animation](../assets/12.jpg?raw=true)
   
   Then put the url in any browser like this 
     http://localhost:8080/spring-security-rest/api/v2/api-docs
     http://localhost:8080/your-app-root/swagger-ui.html
 
-  ![](https://raw.githubusercontent.com/10DECODERS/Cache-Springboot-EMR-Document/master/13.jpg)
+ ![Demo Animation](../assets/13.jpg?raw=true)
 
 
 
